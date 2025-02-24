@@ -4,21 +4,17 @@ In this assignment, you'll implement session management and authentication in a 
 
 ## Getting Started
 
-1. Make sure you have the required packages installed:
-
-```bash
-pip install fastapi uvicorn
-```
-
-2. Examine the project structure:
+1. Examine the project structure:
 
 ```
-project/
-├── app.py
-└── static/
-    ├── login.html
-    ├── profile.html
-    └── error.html
+app
+    ├── app.py
+    ├── database.py
+    ├── decorators.py
+    └── static/
+        ├── login.html
+        ├── profile.html
+        └── error.html
 ```
 
 3. Open `app.py` and follow the numbered TODOs (1-14). Each TODO guides you through implementing a specific part of the authentication system:
@@ -28,10 +24,10 @@ project/
 - Managing sessions
 - Handling authentication errors
 
-4. Run the server:
+4. Run the server and DB, as we've done before:
 
 ```bash
-python3 app.py
+docker-compose up --build
 ```
 
 5. Visit `http://localhost:8000` in your browser to test your implementation.

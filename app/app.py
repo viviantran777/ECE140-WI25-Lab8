@@ -52,6 +52,8 @@ def get_error_html(username: str) -> str:
 async def root():
     """Redirect users to /login"""
     # TODO: 2. Implement this route
+    with open("static/login.html") as html:
+        return HTMLResponse(content=html.read())
 
 
 @app.get("/login", response_class=HTMLResponse)
@@ -60,6 +62,8 @@ async def login_page(request: Request):
     # TODO: 3. check if sessionId is in attached cookies and validate it
     # if all valid, redirect to /user/{username}
     # if not, show login page
+    if sessionID == 
+
 
 
 @app.post("/login")

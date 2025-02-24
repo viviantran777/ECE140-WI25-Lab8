@@ -24,13 +24,15 @@ app
 - Managing sessions
 - Handling authentication errors
 
-4. Run the server and DB, as we've done before:
+4. Open `decorators.py` and finish the missing parts of the `auth_required` function.
+
+5. Run the server and DB, as we've done before:
 
 ```bash
 docker-compose up --build
 ```
 
-5. Visit `http://localhost:8000` in your browser to test your implementation.
+6. Visit `http://localhost:8000` in your browser to test your implementation.
 
 ## Test Users
 
